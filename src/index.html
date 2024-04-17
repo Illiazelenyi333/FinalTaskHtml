@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuestra página web está diseñada pensando en la facilidad de uso y la experiencia del cliente. Puedes navegar por nuestras categorías y explorar los diferentes sitios web disponibles. Cada sitio web viene con una descripción detallada, capturas de pantalla y una lista de características para que puedas evaluar si se ajusta a tus necesidades.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/styles/index.css">
+    <title>Atmosphere</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div>
+                <a href="/"><img  class="nav-img" src="/static/images/Vector.svg" alt="atmosphere_logo"></a>
+            </div>
+            <div>
+                <a class="navbutton" href="./products">Products</a>
+                <!-- <a class="navbutton" href="/login_work">Login</a> -->
+                <a class="navbutton" href="./presupuesto">Presupuesto</a>
+                <a class="navbutton" href="./contacto">Contacto</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <div class="backNavbar"></div>
+    <div class="navbarAdaptation">
+        <div>
+            <a href="/"><img  class="nav-img" src="/static/images/Vector.svg" alt="atmosphere_logo"></a>
+        </div>
+        <div class="navbutton"><a href="./products">Products</a><br></div>
+        <div><!-- <a class="navbutton" href="/login_work">Login</a> --></div>
+        <div class="navbutton"><a href="./presupuesto">Presupuesto</a><br></div>
+        <div class="navbutton"><a href="./contacto">Contacto</a></div>
+    </div>
+    <section>
+        <img src="/static/images/Vector.svg" height="80" width="80" alt="atmosphere_logo">
+        <div class="title">Welcome to Atmosphere Dev</div>
+        <div class="subtitle">IT Company</div>
+        <div class="container">
+            <img src="/static/images/tech.png" width="2000" height="1373" alt="techno_hologram">
+            <p>Bienvenido a Atmosphere
+            la tienda en línea donde puedes
+                encontrar y adquirir sitios web
+                de alta calidad para tu negocio.
+                Nuestra página web está diseñada
+                para proporcionarte una experiencia
+                    única y sin complicaciones
+                    al comprar un sitio web que
+                    se adapte a tus necesidades
+                    y objetivos comerciales.
+
+
+            </p>
+        </div>
+        <div class="container">
+        <img src="/static/images/web2.png" width="1920" height="1200" alt="work_ilustration">
+        <p>En Atmosphere, nos enorgullece ofrecer productos
+                de alta calidad y un servicio al cliente excepcional.
+                Nuestro objetivo es ayudarte a llevar tu negocio al 
+                siguiente nivel con un sitio web profesional y efectivo.
+                Así que no pierdas más tiempo, visita nuestra página web
+                y descubre la forma más conveniente de adquirir un sitio 
+                web de calidad para tu negocio. ¡Estamos listos para ayudarte
+                    a tener éxito en línea!
+
+        </p>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"> Facebook</i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"> Twitter</i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"> Instagram</i></a>
+            <a><i class="fa-solid fa-shop"> calle  London eye </i></a>
+            <a href="/privacy_policy"><i class="fa-solid fa-folder"> Politica de Privacidad</i></a>
+        </div>
+    </footer>
+    
+    <script>
+        const fa_bars = document.querySelector(".fa-bars");
+        const navbarAdaptation = document.querySelector(".navbarAdaptation");
+        const backNavbar = document.querySelector(".backNavbar");
+
+        fa_bars.addEventListener("click", function() {
+            navbarAdaptation.style.marginLeft = "0px";
+            backNavbar.style.display = "block";
+        });
+
+        backNavbar.addEventListener("click", function() {
+            navbarAdaptation.style.marginLeft = "-70%";
+            backNavbar.style.display = "none";
+        });
+    </script>
+</body>
+</html>

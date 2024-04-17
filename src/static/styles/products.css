@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: "Roboto Slab", serif;
+	box-sizing: border-box;
+}
+
+
+body {
+    background-color: #191919;
+    color: white;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    background-color: #9f9f9f12;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,25%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarBlock {
+    margin: 0 20px;
+    display: flex;
+}
+
+.navbutton {
+    margin: 0 10px;
+    padding: 7px 22px;
+    border-radius: 10px;
+    background-color: #008cff;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.navbutton a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbutton:hover {
+    padding: 9px 25px;
+    background-color: #0065b8;
+}
+
+.nav-img{
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+section {
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+.input {
+    height: 40px;
+    width: 240px;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.195);
+    background-color: #191919;
+    color: rgba(255, 255, 255, 0.663);
+}
+
+.input:hover {
+    background-color: #19191912;
+}
+
+.input:focus {
+    border: 3px solid rgb(63, 63, 63);
+}
+
+.politic {
+    color: rgba(255, 255, 255, 0.663);
+    margin-bottom: 20px;
+}
+.politic a{
+    color: rgb(234, 255, 0);
+}
+.politic:hover {
+    color: rgba(255, 255, 255, 0.803);
+}
+
+#button {
+    padding: 10px 35px;
+    background-color: rgb(119, 119, 119);
+    border-radius: 9px;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: rgb(143, 143, 143);
+}
+
+#button:active {
+    background-color: rgb(59, 59, 59);
+}
+
+
+.alert {
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+#circle {
+    background-color: rgb(255, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 8px;
+}
+
+#alert-text {
+    position: relative;
+    bottom: 25px;
+}
+
+.text {
+    color: rgb(255, 0, 0);
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9f9f9f12;
+    border-radius: 20px;
+    width: 30%;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.backNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+}
+
+.navbarAdaptation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #383838;
+    transition: 0.3s;
+    z-index: 3;
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 30px;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 20px;
+}
+
+.card button {
+    padding: 5px 20px;
+    margin: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #008cffcb;
+    color: white;
+    transition: all 0.5s;
+}
+.card button:hover {
+    padding: 5px 20px;
+    margin: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #005295;
+}
+
+
+@media (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+    .navbarAdaptation {
+        display: block;
+        margin-left: -70%;
+    }
+    .navbarAdaptation .navbutton {
+        margin: 15px 20px;
+    }
+    .navbarAdaptation .nav-img {
+        margin-left: 20px;
+    }
+    header {
+        height: 50px;
+        justify-content: right;
+    }
+    section {
+        margin-top: 20px;
+    }
+    .fa-bars {
+        display: block;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .loginContainer {
+        width: 100%;
+    }
+}
+
+
+.fa-facebook:hover{
+    color: #008cff;
+    cursor: pointer;
+}
+
+.fa-twitter:hover{
+    color: #00ccff;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: #ee2a7b;
+    cursor: pointer;
+}
+
+.fa-folder:hover{
+    color: #ff0000;
+}
+footer {
+    width: 100%;
+    background-color: #0e0e0e;
+    padding: 40px;
+    text-align: center;
+}
+.social-links a {
+    margin: 0 10px;
+    color: #bfb6b6;
+    text-decoration: none;
+    margin-inline: 20px;
+}
+
+.this {
+    background-color: #ee2a7b;
+}

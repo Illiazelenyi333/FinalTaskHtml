@@ -1,0 +1,8 @@
+services:
+  trabajo:
+    image: trabajo:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8006:8000
